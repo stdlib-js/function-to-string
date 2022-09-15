@@ -41,7 +41,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import function2string from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-to-string@esm/index.mjs';
+import function2string from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-to-string@v0.0.1-esm/index.mjs';
 ```
 
 #### function2string( fcn )
@@ -103,7 +103,7 @@ import daxpy from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-daxpy@esm/ind
 import kebabcase from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-kebabcase@esm/index.mjs';
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
 import format from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-format@esm/index.mjs';
-import function2string from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-to-string@esm/index.mjs';
+import function2string from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-to-string@v0.0.1-esm/index.mjs';
 
 var fcns = [
     [ 'ndarray', ndarray ],
