@@ -41,6 +41,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import function2string from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-to-string@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/function-to-string/tags). For example,
+
+```javascript
 import function2string from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-to-string@v0.0.1-deno/mod.js';
 ```
 
@@ -98,7 +103,7 @@ import daxpy from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-daxpy@deno/mo
 import kebabcase from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-kebabcase@deno/mod.js';
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import format from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-format@deno/mod.js';
-import function2string from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-to-string@v0.0.1-deno/mod.js';
+import function2string from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-to-string@deno/mod.js';
 
 var fcns = [
     [ 'ndarray', ndarray ],
