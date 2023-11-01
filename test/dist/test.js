@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,65 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var function2string = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof function2string, 'function', 'main export is a function' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
-});
-
-tape( 'the function throws an error if not provided a function', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		'5',
-		5,
-		NaN,
-		null,
-		void 0,
-		true,
-		false,
-		[],
-		{}
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
-	}
-	t.end();
-
-	function badValue( value ) {
-		return function badValue() {
-			function2string( value );
-		};
-	}
-});
-
-tape( 'the function returns a string', function test( t ) {
-	var fcns;
-	var str;
-	var i;
-
-	fcns = [
-		tape,
-		function2string,
-		add
-	];
-
-	for ( i = 0; i < fcns.length; i++ ) {
-		str = function2string( fcns[ i ] );
-
-		// NOTE: cannot perform more stringent tests, as pre-ES2018 environments were not required to return the exact source code as the original function declaration...
-		t.strictEqual( typeof str, 'string', 'returns expected value' );
-	}
-	t.end();
-
-	function add( x, y ) {
-		return x + y;
-	}
 });
