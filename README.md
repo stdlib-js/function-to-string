@@ -159,6 +159,12 @@ for ( i = 0; i < fcns.length; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/function-ctor`][@stdlib/function/ctor]</span><span class="delimiter">: </span><span class="description">function constructor.</span>
+
 </section>
 
 <!-- /.related -->
@@ -232,7 +238,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/function-to-string/main/LICENSE
 
-[@stdlib/function/ctor]: https://github.com/stdlib-js/stdlib
+[@stdlib/function/ctor]: https://github.com/stdlib-js/function-ctor
+
+<!-- <related-links> -->
+
+<!-- </related-links> -->
 
 </section>
 

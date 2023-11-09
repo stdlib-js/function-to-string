@@ -38,7 +38,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@stdlib/bench": "^0.1.0",
+    "@stdlib/bench": "^0.2.0",
     "@stdlib/blas-base-daxpy": "^0.1.1",
     "@stdlib/math-base-special-erf": "^0.1.0",
     "@stdlib/ndarray-ctor": "^0.1.0",
