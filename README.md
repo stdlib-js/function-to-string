@@ -45,38 +45,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/function-to-string
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-function2string = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/function-to-string@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var function2string = require( 'path/to/vendor/umd/function-to-string/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/function-to-string@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.function2string;
-})();
-</script>
+var function2string = require( '@stdlib/function-to-string' );
 ```
 
 #### function2string( fcn )
@@ -126,19 +118,14 @@ var str = function2string( add );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erf@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-daxpy@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-kebabcase@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-format@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/function-to-string@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var ndarray = require( '@stdlib/ndarray-ctor' );
+var erf = require( '@stdlib/math-base-special-erf' );
+var daxpy = require( '@stdlib/blas-base-daxpy' );
+var kebabcase = require( '@stdlib/string-kebabcase' );
+var randu = require( '@stdlib/random-base-randu' );
+var format = require( '@stdlib/string-format' );
+var function2string = require( '@stdlib/function-to-string' );
 
 var fcns = [
     [ 'ndarray', ndarray ],
@@ -154,11 +141,6 @@ var i;
 for ( i = 0; i < fcns.length; i++ ) {
     console.log( format( 'Function: %s\n\n%s\n', fcns[ i ][ 0 ], function2string( fcns[ i ][ 1 ] ) ) );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -256,7 +238,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/function-to-string/main/LICENSE
 
-[@stdlib/function/ctor]: https://github.com/stdlib-js/function-ctor/tree/umd
+[@stdlib/function/ctor]: https://github.com/stdlib-js/function-ctor
 
 <!-- <related-links> -->
 
