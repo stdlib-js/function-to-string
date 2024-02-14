@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import function2string from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-to-string@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/function-to-string/tags). For example,
+
+```javascript
 import function2string from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-to-string@v0.2.0-esm/index.mjs';
 ```
 
@@ -114,7 +119,7 @@ import daxpy from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-daxpy@esm/ind
 import kebabcase from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-kebabcase@esm/index.mjs';
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
 import format from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-format@esm/index.mjs';
-import function2string from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-to-string@v0.2.0-esm/index.mjs';
+import function2string from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-to-string@esm/index.mjs';
 
 var fcns = [
     [ 'ndarray', ndarray ],
