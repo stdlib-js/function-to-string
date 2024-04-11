@@ -39,7 +39,7 @@
   "dependencies": {},
   "devDependencies": {
     "@stdlib/blas-base-daxpy": "^0.2.1",
-    "@stdlib/math-base-special-erf": "^0.2.2",
+    "@stdlib/math-base-special-erf": "^0.2.3",
     "@stdlib/ndarray-ctor": "^0.2.1",
     "@stdlib/random-base-randu": "^0.2.1",
     "@stdlib/string-format": "^0.2.1",
