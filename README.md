@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import function2string from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-to-string@deno/mod.js';
+import function2string from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-to-string@v0.2.2-deno/mod.js';
 ```
 
 #### function2string( fcn )
@@ -109,7 +109,7 @@ import daxpy from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-daxpy@deno/mo
 import kebabcase from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-kebabcase@deno/mod.js';
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import format from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-format@deno/mod.js';
-import function2string from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-to-string@deno/mod.js';
+import function2string from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-to-string@v0.2.2-deno/mod.js';
 
 var fcns = [
     [ 'ndarray', ndarray ],
