@@ -45,14 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/function-to-string
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import function2string from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-to-string@deno/mod.js';
+var function2string = require( '@stdlib/function-to-string' );
 ```
 
 #### function2string( fcn )
@@ -103,13 +121,13 @@ var str = function2string( add );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@deno/mod.js';
-import erf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erf@deno/mod.js';
-import daxpy from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-daxpy@deno/mod.js';
-import kebabcase from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-kebabcase@deno/mod.js';
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import format from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-format@deno/mod.js';
-import function2string from 'https://cdn.jsdelivr.net/gh/stdlib-js/function-to-string@deno/mod.js';
+var ndarray = require( '@stdlib/ndarray-ctor' );
+var erf = require( '@stdlib/math-base-special-erf' );
+var daxpy = require( '@stdlib/blas-base-daxpy' );
+var kebabcase = require( '@stdlib/string-kebabcase' );
+var randu = require( '@stdlib/random-base-randu' );
+var format = require( '@stdlib/string-format' );
+var function2string = require( '@stdlib/function-to-string' );
 
 var fcns = [
     [ 'ndarray', ndarray ],
@@ -162,7 +180,7 @@ for ( i = 0; i < fcns.length; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -225,7 +243,7 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/function-to-string/main/LICENSE
 
-[@stdlib/function/ctor]: https://github.com/stdlib-js/function-ctor/tree/deno
+[@stdlib/function/ctor]: https://github.com/stdlib-js/function-ctor
 
 <!-- <related-links> -->
 
